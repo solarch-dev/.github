@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/logo-1779724213346.svg" alt="Solarch Logo" width="180"/>
+  <img src="assets/logo-1779724213346.svg" alt="Solarch Logo" width="100"/>
   <h1>SOLARCH</h1>
   <h3>AI-Powered Architectural Pipeline & Agentic DevTool</h3>
 

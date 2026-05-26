@@ -6,7 +6,10 @@
   <br/>
   
   <p>
-    <a href="https://www.producthunt.com/posts/solarch?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-solarch" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=solarch&theme=light" alt="Solarch - AI-Powered Architectural Pipeline & Agentic DevTool | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+    <a href="https://producthunt.com" target="_blank">
+  <img src="https://producthunt.com" alt="Solarch - Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" />
+</a>
+
   </p>
   <p>
     <a href="https://twitter.com/solarch"><img src="https://img.shields.io/twitter/follow/solarch?style=social" alt="X (Twitter) Follow"></a>

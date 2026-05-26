@@ -7,7 +7,7 @@
   
   <p>
     <a href="https://producthunt.com" target="_blank">
-  <img src="https://images.icon-icons.com/2699/PNG/512/producthunt_logo_icon_169835.png" width="300" alt="Solarch - Product Hunt" />
+  <img src="https://images.icon-icons.com/2699/PNG/512/producthunt_logo_icon_169835.png" width="100" alt="Solarch - Product Hunt" />
 </a>
 
   </p>

@@ -20,13 +20,13 @@
 
 <p align="center"><strong>Your entire workspace, on one canvas.</strong> &nbsp;|&nbsp; AI that ships. No more hallucinations.</p>
 
-</div>
+
 [**Why Solarch?**](#why-solarch) |
 [**Screenshots & Gifs**](#screenshots--gifs) |
 [**Features**](#features) |
 [**The Philosophy**](#the-philosophy) |
 [**Get Involved**](#get-involved)
-
+</div>
 ## Why Solarch?
 
 Most AI tools hallucinate code and hope the architecture catches up. Solarch flips that.

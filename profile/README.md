@@ -1,8 +1,11 @@
 <div align="center">
-<h1>Solarch</h1>
-<img src="assets/logo-1779724213346.svg" alt="Solarch Logo" width="180"/>
-<h3>AI-Powered Architectural Pipeline & Agentic DevTool</h3>
-
+<h2 align="center">
+ <img src="assets/logo-1779724213346.svg" alt="Solarch Logo" width="60" align="center" /> 
+  &nbsp;&nbsp;
+ Solarch  
+  &nbsp;&nbsp;
+</h2>
+  <p>AI-Powered Architectural Pipeline & Agentic DevTool</p>
  <br/>
   
 

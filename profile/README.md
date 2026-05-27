@@ -1,114 +1,92 @@
-<div align="center">
-  <img src="assets/logo-1779724213346.svg" alt="Solarch Logo" width="100"/>
-  <h1>SOLARCH</h1>
-  <h3>AI-Powered Architectural Pipeline & Agentic DevTool</h3>
+<h1 align="center">Solarch</h1>
 
-  <br/>
-  
-  <p>
-    <a href="https://producthunt.com" target="_blank">
-  <img src="https://images.icon-icons.com/2699/PNG/512/producthunt_logo_icon_169835.png" width="100" alt="Solarch - Product Hunt" />
-</a>
+<p align="center"><strong>Your entire workspace, on one canvas.</strong></p>
 
-  </p>
-  <p>
-    <a href="https://twitter.com/solarch"><img src="https://img.shields.io/twitter/follow/solarch?style=social" alt="X (Twitter) Follow"></a>
-    <img src="https://img.shields.io/github/stars/solarch/solarch?style=social" alt="GitHub stars">
-    <img src="https://img.shields.io/github/license/solarch/solarch" alt="License">
-  </p>
-
-  <p><em>Bridging diagrams and code via a strict rules engine to stop AI errors.</em></p>
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="assets/Solarch.png" alt="Solarch Canvas" width="800" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);"/>
-</div>
+<p align="center"><em>AI that ships. No more hallucinations.</em></p>
 
 ---
 
-## WHAT IS SOLARCH?
+## Start with what you have
 
-**Solarch** is an autonomous architectural coding platform designed for software teams, CTOs, and agencies. At its core, Solarch acts as the definitive bridge between visual architecture and generated code. Traditional AI coding assistants write code line-by-line, often losing sight of the bigger picture. Solarch, instead, operates through a strict rules engine that ensures every line of generated code perfectly aligns with your initial diagram.
+A prompt. A scribble. A half-formed idea. Solarch meets you where you are.
 
-By bridging diagrams directly to the codebase via deterministically enforced rules, Solarch completely stops AI hallucinations, logic drifts, and structural errors before they even reach your repository. Say goodbye to spaghetti code and hello to **Zero Architectural Drift**.
+<p align="center">
+  <img src="./assets/AIInputTyping.gif" width="720" alt="AI input" />
+</p>
 
----
+Type what you want to build. The architecture forms in front of you — controllers, services, data layers, all named correctly, all connected correctly.
 
-## CORE PHILOSOPHY
+<p align="center">
+  <img src="./assets/SketchToArchitecture.gif" width="720" alt="Sketch to architecture" />
+</p>
 
-### The Bridge: From Diagram to Code
-Solarch's central thesis is that the diagram *is* the code contract. Our strict rules engine acts as the immutable bridge between your visual intent and the LLM's output. If the AI proposes a change that violates the diagram's logic, the rules engine blocks it instantly.
-
-### Zero Architectural Drift
-AI shouldn't code blindly. Because of the bridge, the code *must* strictly follow the visual architectural diagram (Single Source of Truth). Every component generated matches the blueprint precisely.
-
-### State-Based Generation
-We don't build the entire project with one massive, expensive prompt. Every module is generated step-by-step. The AI presents the Diff, and code is never merged into the repository without your explicit **Approval**. This chunking strategy ensures massive token cost optimization and surgical precision.
+Draw it on a napkin instead. Hit **Refine**. Your sketch becomes structured architecture in seconds — same canvas, same model, no translation tax.
 
 ---
 
-## FEATURES
+## Watch architecture build itself
 
-### Agentic Pipeline Builder
-Plan the exact sequence of tasks your AI agents will execute with a clean, Bauhaus-inspired visual node interface. 
+<p align="center">
+  <img src="./assets/AICanvasBuilding.gif" width="720" alt="AI canvas building" />
+</p>
 
-> `[Read Diagram] ➔ [Write FastAPI Route] ➔ [Add DB Migration] ➔ [Write Pytest] ➔ [Isolated Test] ➔ [Git Commit]`
-
-<div align="center">
-  <img src="assets/NodeKutuphanesi.png" alt="Node Library" width="700" style="border-radius: 8px; margin-top: 15px;"/>
-</div>
-
-<br/>
-
-### Architecture Time Travel
-Because Solarch is **State-Based**, every approved step is saved as a Snapshot. Need to revert? Drag the timeline back, and instantly rollback your diagram, database schema, and code blocks to a previous stable state.
-
-### Autonomous Quality Control
-- **Auto-Pentest (Red Team Agent):** Spawns in an isolated sandbox after code generation. It autonomously attacks your API endpoints (SQL Injection, Rate Limiting). If it finds a vulnerability, it rejects the code and patches it itself.
-- **Architectural Gatekeeper:** Prevents team members from opening Pull Requests that deviate from the visual diagram.
+One prompt. Layered architecture. Nodes appear with zen pop animations, edges flow with the right semantics — **calls**, **uses**, **queries** — labeled, colored, and wired with intent. No stitching together fragments. No re-prompting. The whole shape, in one shot.
 
 ---
 
-## TECHNICAL DEPTH
+## Solarch doesn't write code. It writes architecture.
 
-Solarch is built to scale, capable of handling high loads (50,000 RPM) with a modern, monolithic-yet-scalable architecture:
+Most AI tools hallucinate code and hope the architecture catches up. Solarch flips that.
 
-- **Frontend:** Vite 8, React 19, and our hyper-optimized, **60fps Custom Canvas 2D Engine** (bypassing the DOM entirely for massive node rendering). Includes a fully-typed OpenAPI client and strict Rules Engine interactions.
-- **Backend:** NestJS 11, Neo4j (Graph DB + Native Vector Index), DeepSeek v4-flash, and a powerful graph mutation/rules engine.
-- **AI & RAG:** Seamlessly integrates GraphRAG, local MiniLM embeddings (`@xenova/transformers`), and top-tier LLMs for zero-hallucination natural language architecture generation.
+- **Constructors** ship 80% of your structure. Reusable, opinionated patterns — auth flows, CRUD slabs, event pipelines — pre-wired with the right relationships.
+- **Surgical AI** completes the remaining 20%: the algorithm, the validation rule, the business-specific edge case. Where AI actually adds value, where determinism is impossible.
 
----
-
-## HOW IT WORKS (AI WORKFLOW)
-
-Just talk to the Omni-Bar.
-
-<div align="center">
-  <img src="assets/Solarch Instruct.png" alt="Solarch Instruct Omni-Bar" width="600" style="border-radius: 8px; margin: 20px 0;"/>
-</div>
-
-1. **Instruct in Natural Language:** Start by describing your desired architecture.
-2. **Vector Search (GraphRAG):** The system searches the canonical pattern library using Neo4j vector indexing.
-3. **LLM Generation:** DeepSeek structures the JSON output perfectly aligned with the graph schema.
-4. **Atomic DB Commit:** The visual graph is dynamically rendered and safely committed via the Rules Engine with automated self-correction loops.
+Predictable structure. Targeted intelligence. Zero hallucinated APIs.
 
 ---
 
-## ACCESS SOLARCH
+## A library of constructors
 
-No local installation or complex setup is required. Solarch is a fully managed cloud platform.
+<p align="center">
+  <img src="./assets/TemplateLibrary.gif" width="720" alt="Template library" />
+</p>
 
-You can access your virtual engineering team directly at:
-
-<div align="center">
-  <h3><a href="https://solarch.dev">www.solarch.dev</a></h3>
-</div>
+One click expands an entire pattern: nodes, edges, methods, types — all wired. No more starting from a blank canvas. Pick the shape, refine the detail. **Templates that ship**, not stubs you have to finish.
 
 ---
 
-<div align="center">
-  <strong>Built with precision by the Solarch Team.</strong><br><br>
-  <a href="https://github.com/solarch/solarch/issues">Report an Issue</a> &nbsp;&middot;&nbsp; <a href="https://twitter.com/solarch">Follow our Updates</a>
-</div>
+## Connect anything to anything
+
+<p align="center">
+  <img src="./assets/EdgeConnecting.gif" width="720" alt="Edge connecting" />
+</p>
+
+Hover a port, drag, snap. Semantic relationships — *calls*, *queries*, *publishes*, *subscribes*, *throws* — are first-class citizens, not generic arrows. Every edge carries meaning your architecture can reason about.
+
+---
+
+## Every node, fully editable
+
+<p align="center">
+  <img src="./assets/InspectorReveal.gif" width="720" alt="Inspector reveal" />
+</p>
+
+Double-click any node. Methods, fields, types, validation rules, dependencies — edit inline with a contextual inspector. Each of the 21 node families ships its own purpose-built editor: tables get column grids, services get method tables, controllers get endpoint rows. No generic JSON forms.
+
+---
+
+## Ask your architecture anything
+
+<p align="center">
+  <img src="./assets/InstructQuestion.gif" width="720" alt="Instruct mode" />
+</p>
+
+Switch to **Instruct** mode and chat with your design. Every answer cites the nodes it references — and every citation is a live chip that focuses the canvas, lit up with a soft halo. Your architecture explains itself, in your own canvas, in real time.
+
+---
+
+## See. Understand. Plan.
+
+In one shot.
+
+<p align="center"><strong>Solarch.</strong></p>

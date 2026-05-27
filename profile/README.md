@@ -5,9 +5,6 @@
 
  <br/>
   
-  <p>
-    <a href="https://www.producthunt.com/posts/solarch?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-solarch" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=solarch&theme=light" alt="Solarch - AI-Powered Architectural Pipeline & Agentic DevTool | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
-  </p>
 
 [![License](https://img.shields.io/badge/License-PolyForm%20NC%201.0-orange.svg)](./LICENSE)
 [![GitHub Stars](https://img.shields.io/github/stars/fatalerrorist/Solarch?style=social)](https://github.com/fatalerrorist/Solarch/stargazers)

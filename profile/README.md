@@ -17,7 +17,7 @@
 
 <br />
 
-<img src="./assets/AICanvasBuilding.gif" width="100%" alt="Solarch — AI builds architecture from a single prompt" />
+<img src="./assets/AICanvasBuilding.gif" width="100%" alt="Solarch — AI builds rule-validated architecture from a single prompt" />
 
 <br />
 
@@ -31,58 +31,56 @@
 
 ## ✦ Why Solarch?
 
-Most AI tools hallucinate code and hope the architecture catches up. **Solarch flips that.**
+Most AI tools generate code and hope the architecture catches up. **Solarch flips that.**
 
-It writes **architecture** first — a structured, navigable, editable graph of your system — and only invokes AI where AI actually adds value: the algorithm, not the API surface.
+It generates **architecture first** — grounded in a library of canonical patterns, validated by a strict Rules Engine, refined through a self-correcting loop. The AI proposes; the rules verify; only correct graphs ever land on the canvas.
 
-*   **One canvas for the whole system:** Controllers, services, repositories, tables, DTOs, and the semantic edges between them.
-*   **Sketch-to-Architecture Pipeline:** Draw freehand, hit Refine, get a structured graph.
-*   **Constructors:** Opinionated, pre-wired patterns (auth, CRUD, event pipelines) that ship 80% of your structure on click.
-*   **Surgical AI:** Algorithm-only completion in the remaining 20%; no hallucinated APIs, no fabricated endpoints.
-*   **First-Class Semantic Edges:** *Calls*, *queries*, *publishes*, *subscribes*, *throws* — visualized natively, not as generic arrows.
-*   **Per-Type Editors:** Tables get column grids, services get method tables, controllers get endpoint rows.
-*   **Live Instruct Mode:** Chat with your architecture; every answer cites the exact nodes it references and focuses the canvas.
+*   **One canvas for the whole system:** 21 node families — controllers, services, repositories, tables, DTOs, queues — and the 16 semantic edges between them.
+*   **AI Architect grounded in GraphRAG:** LangGraph + DeepSeek pulls from a vector-indexed pattern library. It never starts from a blank context, never invents an API surface.
+*   **Rules Engine that refuses to lie:** 32 whitelist rules, 7 anti-patterns, 3 conditional checks. Frontends can't talk to tables. Controllers can't reach repositories. Period.
+*   **Self-correcting loop:** Rules rejection feeds back into the agent; the AI revises and tries again until the graph is clean — or never commits.
+*   **Live Instruct Mode:** Switch modes and chat with your design. Every answer cites the exact nodes; chips focus the canvas in real time.
+*   **Single-home + reference tabs:** Each node lives in one tab. Other tabs *import* it as a reference, not a copy. One source of truth, multiple views.
+*   **Type-safe from DB to button:** Zod schemas at the backend, OpenAPI in the middle, `openapi-fetch` on the frontend. The API contract is a compile-time check.
 
 ---
 
 ## ✦ Gallery
 
-Solarch meets you where you are. See how ideas transform into structured, provable architecture in seconds.
-
 <table width="100%">
   <tr>
     <td width="50%" valign="top">
       <b>1. Start with a prompt</b><br/>
-      A prompt. A scribble. A half-formed idea. Type what you want to build — the architecture forms in front of you.<br/><br/>
+      Type what you want to build. The AI Architect kicks in: pulls canonical patterns, plans the graph, and applies it through the Rules Engine.<br/><br/>
       <img src="./assets/AIInputTyping.gif" width="100%" alt="AI input typing" />
     </td>
     <td width="50%" valign="top">
-      <b>2. Or draw a sketch</b><br/>
-      Draw it on a napkin instead. Hit <b>Refine</b>. Your sketch becomes a structured architecture in seconds.<br/><br/>
+      <b>2. Sketch → architecture <i>(preview)</i></b><br/>
+      Freeform sketch becomes a structured graph on <b>Refine</b>. Native sketch surface on the roadmap; the AI-driven refine path runs today.<br/><br/>
       <img src="./assets/SketchToArchitecture.gif" width="100%" alt="Sketch to architecture" />
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
       <b>3. Watch it build itself</b><br/>
-      Nodes appear with zen pop animations, edges flow with the right semantics. The whole shape, in one shot.<br/><br/>
+      Nodes pop in with zen animations, edges flow with the right semantics — every relationship rule-validated before it commits.<br/><br/>
       <img src="./assets/AICanvasBuilding.gif" width="100%" alt="AI canvas building" />
     </td>
     <td width="50%" valign="top">
-      <b>4. A library of constructors</b><br/>
-      One click expands an entire pattern: nodes, edges, methods, types. Templates that ship, not stubs.<br/><br/>
-      <img src="./assets/TemplateLibrary.gif" width="100%" alt="Template library" />
+      <b>4. Pattern library <i>(preview)</i></b><br/>
+      A standalone constructor library is on the roadmap. The same canonical patterns already power GraphRAG behind the scenes today.<br/><br/>
+      <img src="./assets/TemplateLibrary.gif" width="100%" alt="Pattern library" />
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <b>5. Connect anything to anything</b><br/>
-      Hover a port, drag, snap. Semantic relationships are first-class citizens carrying meaning.<br/><br/>
+      <b>5. Connect anything — legally</b><br/>
+      Hover a port, drag, snap. The Rules Engine rejects illegal connections instantly. Semantic edges carry meaning, not generic arrows.<br/><br/>
       <img src="./assets/EdgeConnecting.gif" width="100%" alt="Edge connecting" />
     </td>
     <td width="50%" valign="top">
-      <b>6. Every node, fully editable</b><br/>
-      Double-click any node. Methods, fields, validation rules — edit inline with a contextual inspector.<br/><br/>
+      <b>6. Every node, purpose-built editor</b><br/>
+      Double-click any node. Column grids for tables, method tables for services, endpoint rows for controllers — no generic JSON forms.<br/><br/>
       <img src="./assets/InspectorReveal.gif" width="100%" alt="Inspector reveal" />
     </td>
   </tr>
@@ -90,7 +88,7 @@ Solarch meets you where you are. See how ideas transform into structured, provab
 
 <div align="center">
   <b>Ask your architecture anything</b><br/>
-  Switch to Instruct mode and chat with your design. Every citation is a live chip that focuses the canvas.<br/><br/>
+  Switch to Instruct mode and chat with your design. Every citation is a live chip that focuses the canvas with a soft halo.<br/><br/>
   <img src="./assets/InstructQuestion.gif" width="80%" alt="Instruct mode" />
 </div>
 
@@ -101,23 +99,29 @@ Solarch meets you where you are. See how ideas transform into structured, provab
 <table>
   <tr>
     <td width="50%" valign="top">
+      <b>AI &amp; Rules</b>
       <ul>
-        <li><b>Three-Mode Pipeline:</b> <code>Sketch</code> → <code>Refine</code> → <code>Generate</code></li>
-        <li><b>Native SVG Sketch Surface:</b> Freehand, stencils, frames, multi-tab workspace</li>
-        <li><b>AI-Driven Refine:</b> LangGraph + DeepSeek inference</li>
-        <li><b>21 First-Class Node Families:</b> Table, DTO, Model, Service, Worker, Controller, APIGateway, Repository, and more.</li>
-        <li><b>16 Semantic Edge Kinds:</b> <code>CALLS</code>, <code>QUERIES</code>, <code>WRITES</code>, <code>PUBLISHES</code>, <code>SUBSCRIBES</code>...</li>
-        <li><b>Mermaid Export:</b> Every graph round-trips for external tooling.</li>
+        <li><b>AI Architect:</b> LangGraph + ChatDeepSeek v4-flash, atomic tool calling</li>
+        <li><b>Rules Engine:</b> 32 whitelist · 7 blacklist (ERR_001..007) · 3 conditional</li>
+        <li><b>GraphRAG:</b> vector search over a canonical pattern library</li>
+        <li><b>Self-correction loop:</b> rejection feeds back into agent state, AI revises</li>
+        <li><b>Vector-native Neo4j:</b> embeddings + graph in one DB, no extra Pinecone</li>
+        <li><b>Local embeddings:</b> MiniLM-L12-v2, multilingual (Turkish included), 384-d</li>
+        <li><b>21 node families:</b> Table, DTO, Model, Service, Worker, Controller, Repository, Cache, Middleware, and more</li>
+        <li><b>16 semantic edges:</b> <code>CALLS</code>, <code>QUERIES</code>, <code>WRITES</code>, <code>PUBLISHES</code>, <code>SUBSCRIBES</code>, <code>THROWS</code>...</li>
       </ul>
     </td>
     <td width="50%" valign="top">
+      <b>Workspace &amp; UI</b>
       <ul>
-        <li><b>Constructor Library:</b> One-click expansion into fully-wired node groups.</li>
-        <li><b>Purpose-Built Inspectors:</b> Column grids for tables, method tables for services.</li>
-        <li><b>Instruct Mode:</b> Q&A with live node chips and per-turn context.</li>
-        <li><b>Edge Bundling & Routing:</b> Obstacle-aware paths.</li>
-        <li><b>Local-First Persistence:</b> Your project is the canonical model.</li>
-        <li><b>Aydınlık Blueprint Design:</b> Paper zemin, semantic colors, hairline grid.</li>
+        <li><b>Custom Canvas 2D:</b> 60fps, dual-canvas, viewport culling, devicePixelRatio</li>
+        <li><b>AI Omni-Bar:</b> Agent (build) + Instruct (Q&amp;A) modes, SSE streaming</li>
+        <li><b>Live node chips:</b> citations focus the canvas with a soft halo</li>
+        <li><b>Purpose-built inspectors:</b> per-type editors (4 today, the rest on roadmap)</li>
+        <li><b>Multi-tab workspace:</b> single-home model + cross-tab references, not copies</li>
+        <li><b>Edge bundling &amp; routing:</b> obstacle-aware bezier and elbow paths</li>
+        <li><b>Type-safe API client:</b> Zod → OpenAPI → <code>openapi-fetch</code> + <code>openapi-typescript</code></li>
+        <li><b>Aydınlık Blueprint design:</b> warm paper, semantic family colors, hairline grid, Satoshi + JetBrains Mono</li>
       </ul>
     </td>
   </tr>
@@ -127,18 +131,21 @@ Solarch meets you where you are. See how ideas transform into structured, provab
 
 ## ✦ The Philosophy
 
-> **Solarch doesn't write code. It writes architecture.**
+> **Solarch doesn't fight AI hallucination — it makes hallucination structurally impossible.**
 >
-> The industry has spent two years trying to make LLMs write code. The result: confident hallucinations, ghost APIs, and codebases that compile but lie. The hallucination isn't a tuning problem — it's a category error.
-> 
+> The industry has spent two years asking LLMs to write code. The result: confident hallucinations, ghost APIs, codebases that compile but lie. Hallucination isn't a tuning problem — it's a category error.
+>
 > Architecture is the level where structure is **provable**. A controller calls a service. A service queries a repository. A repository writes a table. These relationships are either present or not. They can't be hallucinated.
 
-Solarch separates the two concerns:
+Solarch stacks three layers that, together, leave no room for an AI to invent something that doesn't exist:
 
-1. **Constructors:** Deterministic, hand-authored, pre-wired patterns that ship the structural 80% of any backend. No AI, no risk. Just composition.
-2. **Surgical AI:** Invoked only inside the algorithmic 20%. A specific business rule, the pricing curve, the retry policy. Where AI genuinely earns its keep.
+1. **GraphRAG.** The agent starts every request by retrieving canonical patterns from a vector-indexed library. No blank context, no improvisation from zero.
+2. **Rules Engine.** Every mutation passes a deterministic gate — 32 whitelist rules, 7 anti-patterns, 3 conditional checks. Illegal edges never land. The schema can't be coerced.
+3. **Self-correction loop.** When the Rules Engine rejects a draft, the violation message feeds back into the agent state. The AI revises until the graph is clean, or the request terminates without a commit.
 
-**Predictable structure. Targeted intelligence. Zero hallucinated APIs.**
+The output isn't *trustworthy* code. It's *provably correct* structure.
+
+**Provable structure. Targeted intelligence. Zero hallucinated APIs.**
 
 ---
 

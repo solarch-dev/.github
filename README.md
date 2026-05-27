@@ -1,4 +1,13 @@
-# Solarch
+<div align="center">
+<h1>Solarch</h1>
+<img src="profile/assets/logo-1779724213346.svg" alt="Solarch Logo" width="180"/>
+<h3>AI-Powered Architectural Pipeline & Agentic DevTool</h3>
+
+ <br/>
+  
+  <p>
+    <a href="https://www.producthunt.com/posts/solarch?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-solarch" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=solarch&theme=light" alt="Solarch - AI-Powered Architectural Pipeline & Agentic DevTool | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+  </p>
 
 [![License](https://img.shields.io/badge/License-PolyForm%20NC%201.0-orange.svg)](./LICENSE)
 [![GitHub Stars](https://img.shields.io/github/stars/fatalerrorist/Solarch?style=social)](https://github.com/fatalerrorist/Solarch/stargazers)
@@ -9,11 +18,12 @@
 [![Commit Activity](https://img.shields.io/github/commit-activity/m/fatalerrorist/Solarch)](https://github.com/fatalerrorist/Solarch/pulse)
 
 <p align="center">
-  <img src="./assets/AICanvasBuilding.gif" width="780" alt="Solarch — AI builds architecture from a single prompt" />
+  <img src="./profile/assets/AICanvasBuilding.gif" width="780" alt="Solarch — AI builds architecture from a single prompt" />
 </p>
 
 <p align="center"><strong>Your entire workspace, on one canvas.</strong> &nbsp;|&nbsp; AI that ships. No more hallucinations.</p>
 
+</div>
 [**Why Solarch?**](#why-solarch) |
 [**Screenshots & Gifs**](#screenshots--gifs) |
 [**Features**](#features) |
@@ -136,7 +146,7 @@ In one shot.
 
 ## License
 
-[PolyForm Noncommercial License 1.0.0](./profile/LICENSE) — © 2025 Ugur Akdogan.
+[PolyForm Noncommercial License 1.0.0](./LICENSE) — © 2025 Ugur Akdogan.
 
 **Free** for personal use, research, education, and non-profit organizations. Source is open: fork, learn, modify, share — go for it. **Commercial use requires a separate license** — reach out at [info@solidea.tech](mailto:info@solidea.tech).
 

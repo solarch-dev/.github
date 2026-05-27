@@ -3,7 +3,7 @@
   <img src="assets/logo-1779724213346.svg" alt="Solarch Logo" width="60" align="center" /> 
   &nbsp;&nbsp;Solarch&nbsp;&nbsp;
 </h2>
-  <p>AI-Powered Architectural Pipeline & Agentic DevTool</p>
+  <p>Bridging diagrams and code via a strict rules engine to stop AI errors.</p>
 <br/>
 
 *Your entire workspace, on one canvas. | AI that ships. No more hallucinations.*

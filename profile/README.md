@@ -1,155 +1,168 @@
 <div align="center">
 <h2 align="center">
- <img src="assets/logo-1779724213346.svg" alt="Solarch Logo" width="60" align="center" /> 
-  &nbsp;&nbsp;
- Solarch  
-  &nbsp;&nbsp;
+  <img src="assets/logo-1779724213346.svg" alt="Solarch Logo" width="60" align="center" /> 
+  &nbsp;&nbsp;Solarch&nbsp;&nbsp;
 </h2>
   <p>AI-Powered Architectural Pipeline & Agentic DevTool</p>
- <br/>
-  
+<br/>
+
+*Your entire workspace, on one canvas. | AI that ships. No more hallucinations.*
+
+<br />
 
 [![License](https://img.shields.io/badge/License-PolyForm%20NC%201.0-orange.svg)](./LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/fatalerrorist/Solarch?style=social)](https://github.com/fatalerrorist/Solarch/stargazers)
-[![Contributors](https://img.shields.io/github/contributors/fatalerrorist/Solarch)](https://github.com/fatalerrorist/Solarch/graphs/contributors)
-[![Last Commit](https://img.shields.io/github/last-commit/fatalerrorist/Solarch)](https://github.com/fatalerrorist/Solarch/commits/main)
-[![Open Issues](https://img.shields.io/github/issues/fatalerrorist/Solarch)](https://github.com/fatalerrorist/Solarch/issues)
-[![Open PRs](https://img.shields.io/github/issues-pr/fatalerrorist/Solarch)](https://github.com/fatalerrorist/Solarch/pulls)
-[![Commit Activity](https://img.shields.io/github/commit-activity/m/fatalerrorist/Solarch)](https://github.com/fatalerrorist/Solarch/pulse)
+[![GitHub Stars](https://img.shields.io/github/stars/fatalerrorist/Solarch?style=flat-square)](https://github.com/fatalerrorist/Solarch/stargazers)
+[![Contributors](https://img.shields.io/github/contributors/fatalerrorist/Solarch?style=flat-square)](https://github.com/fatalerrorist/Solarch/graphs/contributors)
+[![Last Commit](https://img.shields.io/github/last-commit/fatalerrorist/Solarch?style=flat-square)](https://github.com/fatalerrorist/Solarch/commits/main)
 
-<p align="center">
-  <img src="./assets/AICanvasBuilding.gif" width="780" alt="Solarch — AI builds architecture from a single prompt" />
-</p>
+<br />
 
-<p align="center"><strong>Your entire workspace, on one canvas.</strong> &nbsp;|&nbsp; AI that ships. No more hallucinations.</p>
+<img src="./assets/AICanvasBuilding.gif" width="100%" alt="Solarch — AI builds architecture from a single prompt" />
 
+<br />
 
-[**Why Solarch?**](#why-solarch) |
-[**Screenshots & Gifs**](#screenshots--gifs) |
-[**Features**](#features) |
-[**The Philosophy**](#the-philosophy) |
-[**Get Involved**](#get-involved)
+[**Why Solarch?**](#-why-solarch) &nbsp; • &nbsp; [**Gallery**](#-gallery) &nbsp; • &nbsp; [**Features**](#-features) &nbsp; • &nbsp; [**Philosophy**](#-the-philosophy) &nbsp; • &nbsp; [**Get Involved**](#-get-involved)
+
 </div>
-## Why Solarch?
 
-Most AI tools hallucinate code and hope the architecture catches up. Solarch flips that.
-
-It writes **architecture** first — a structured, navigable, editable graph of your system — and only invokes AI where AI actually adds value: the algorithm, not the API surface.
-
-Solarch provides:
-
-- **One canvas for the whole system** — controllers, services, repositories, tables, DTOs, and the semantic edges between them
-- A **sketch-to-architecture** pipeline — draw freehand, hit Refine, get a structured graph
-- **Constructors** — opinionated, pre-wired patterns (auth, CRUD, event pipelines) that ship 80% of your structure on click
-- **Surgical AI** — algorithm-only completion in the remaining 20%; no hallucinated APIs, no fabricated endpoints
-- **First-class semantic edges** — *calls*, *queries*, *publishes*, *subscribes*, *throws* — visualized natively, not generic arrows
-- **Per-type editors** — tables get column grids, services get method tables, controllers get endpoint rows
-- A live **Instruct mode** — chat with your architecture; every answer cites the exact nodes it references and focuses the canvas
-
-## Screenshots & Gifs
-
-**Start with a prompt — or a sketch**
-
-<p align="center">
-  <img src="./assets/AIInputTyping.gif" width="720" alt="AI input typing" />
-</p>
-
-A prompt. A scribble. A half-formed idea. Solarch meets you where you are. Type what you want to build — the architecture forms in front of you.
-
-<p align="center">
-  <img src="./assets/SketchToArchitecture.gif" width="720" alt="Sketch to architecture" />
-</p>
-
-Draw it on a napkin instead. Hit **Refine**. Your sketch becomes a structured architecture in seconds — same canvas, same model, no translation tax.
-
-**Watch architecture build itself**
-
-<p align="center">
-  <img src="./assets/AICanvasBuilding.gif" width="720" alt="AI canvas building" />
-</p>
-
-One prompt. Layered architecture. Nodes appear with zen pop animations, edges flow with the right semantics — **calls**, **uses**, **queries** — labeled, colored, and wired with intent. The whole shape, in one shot.
-
-**A library of constructors**
-
-<p align="center">
-  <img src="./assets/TemplateLibrary.gif" width="720" alt="Template library" />
-</p>
-
-One click expands an entire pattern: nodes, edges, methods, types — all wired. No starting from a blank canvas. **Templates that ship**, not stubs you have to finish.
-
-**Connect anything to anything**
-
-<p align="center">
-  <img src="./assets/EdgeConnecting.gif" width="720" alt="Edge connecting" />
-</p>
-
-Hover a port, drag, snap. Semantic relationships are first-class citizens — every edge carries meaning your architecture can reason about.
-
-**Every node, fully editable**
-
-<p align="center">
-  <img src="./assets/InspectorReveal.gif" width="720" alt="Inspector reveal" />
-</p>
-
-Double-click any node. Methods, fields, types, validation rules, dependencies — edit inline with a contextual inspector. No generic JSON forms.
-
-**Ask your architecture anything**
-
-<p align="center">
-  <img src="./assets/InstructQuestion.gif" width="720" alt="Instruct mode" />
-</p>
-
-Switch to **Instruct** mode and chat with your design. Every answer cites the nodes it references — and every citation is a live chip that focuses the canvas with a soft halo. Your architecture explains itself, in your own canvas, in real time.
-
-## Features
-
-- **Three-mode pipeline** — `Sketch` → `Refine` → `Generate`, all on a single canonical model
-- **Native SVG sketch surface** — freehand, stencils, frames, multi-tab workspace
-- **AI-driven refine** — LangGraph + DeepSeek transforms sketches into structured graphs with parallel node + edge inference
-- **21 first-class node families** — Table, DTO, Model, Service, Worker, Controller, APIGateway, Repository, Cache, Middleware, FrontendApp, UIComponent, MessageQueue, EventHandler, Orchestrator, Module, and more
-- **16 semantic edge kinds** — `CALLS`, `QUERIES`, `WRITES`, `PUBLISHES`, `SUBSCRIBES`, `USES`, `HAS`, `RETURNS`, `EXTENDS`, `IMPLEMENTS`, `THROWS`, `READS_CONFIG`, `ROUTES_TO`, `DEPENDS_ON`, `CACHES_IN`, `REQUESTS`
-- **Constructor library** — one-click expansion into fully-wired node groups (auth, CRUD, event pipelines)
-- **Purpose-built inspectors** — column grids for tables, method tables for services, endpoint rows for controllers, validation rule lists for DTOs
-- **Instruct mode** — Q&A over your architecture with live node chips, sequential focus halos, and per-turn context
-- **Edge bundling & semantic routing** — obstacle-aware elbow + bezier paths, three render modes per project
-- **Multi-tab workspace** — break complex systems into focused frames; promote sketch frames to canvas tabs
-- **Mermaid export** — every graph round-trips as Mermaid for docs, code review, and external tooling
-- **Local-first persistence** — your project is a canonical model; AI is a tool, never the source of truth
-- **Aydınlık Blueprint design language** — paper zemin, semantic family colors, hairline grid, Satoshi + JetBrains Mono typography
-
-## The Philosophy
-
-**Solarch doesn't write code. It writes architecture.**
-
-The industry has spent two years trying to make LLMs write code. The result: confident hallucinations, ghost APIs, and codebases that compile but lie. The hallucination isn't a tuning problem — it's a category error.
-
-Architecture is the level where structure is **provable**. A controller calls a service. A service queries a repository. A repository writes a table. These relationships are either present or not. They can't be hallucinated.
-
-So Solarch separates the two concerns:
-
-- **Constructors** — deterministic, hand-authored, pre-wired patterns that ship the structural 80% of any backend. Auth flows, CRUD slabs, event pipelines, validation chains. No AI, no generation, no risk. Just composition.
-- **Surgical AI** — invoked only inside the algorithmic 20%. A specific business rule. An edge case in validation. The pricing curve. The retry policy. Where AI genuinely earns its keep — and where determinism is impossible anyway.
-
-Predictable structure. Targeted intelligence. Zero hallucinated APIs.
-
-## See. Understand. Plan.
-
-In one shot.
-
-## Get Involved
-
-- [GitHub Discussions](https://github.com/fatalerrorist/Solarch/discussions) — feature requests, design feedback, questions
-- [Issues](https://github.com/fatalerrorist/Solarch/issues) — bug reports, regressions
-- [Contributing Guide](./CONTRIBUTING.md) — local setup, conventions, commit style
-- Star the repo to follow along
-
-## License
-
-[PolyForm Noncommercial License 1.0.0](./LICENSE) — © 2025 Ugur Akdogan.
-
-**Free** for personal use, research, education, and non-profit organizations. Source is open: fork, learn, modify, share — go for it. **Commercial use requires a separate license** — reach out at [info@solidea.tech](mailto:info@solidea.tech).
+<br />
 
 ---
 
-<p align="center"><strong>Solarch.</strong></p>
+## ✦ Why Solarch?
+
+Most AI tools hallucinate code and hope the architecture catches up. **Solarch flips that.**
+
+It writes **architecture** first — a structured, navigable, editable graph of your system — and only invokes AI where AI actually adds value: the algorithm, not the API surface.
+
+*   **One canvas for the whole system:** Controllers, services, repositories, tables, DTOs, and the semantic edges between them.
+*   **Sketch-to-Architecture Pipeline:** Draw freehand, hit Refine, get a structured graph.
+*   **Constructors:** Opinionated, pre-wired patterns (auth, CRUD, event pipelines) that ship 80% of your structure on click.
+*   **Surgical AI:** Algorithm-only completion in the remaining 20%; no hallucinated APIs, no fabricated endpoints.
+*   **First-Class Semantic Edges:** *Calls*, *queries*, *publishes*, *subscribes*, *throws* — visualized natively, not as generic arrows.
+*   **Per-Type Editors:** Tables get column grids, services get method tables, controllers get endpoint rows.
+*   **Live Instruct Mode:** Chat with your architecture; every answer cites the exact nodes it references and focuses the canvas.
+
+---
+
+## ✦ Gallery
+
+Solarch meets you where you are. See how ideas transform into structured, provable architecture in seconds.
+
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <b>1. Start with a prompt</b><br/>
+      A prompt. A scribble. A half-formed idea. Type what you want to build — the architecture forms in front of you.<br/><br/>
+      <img src="./assets/AIInputTyping.gif" width="100%" alt="AI input typing" />
+    </td>
+    <td width="50%" valign="top">
+      <b>2. Or draw a sketch</b><br/>
+      Draw it on a napkin instead. Hit <b>Refine</b>. Your sketch becomes a structured architecture in seconds.<br/><br/>
+      <img src="./assets/SketchToArchitecture.gif" width="100%" alt="Sketch to architecture" />
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <b>3. Watch it build itself</b><br/>
+      Nodes appear with zen pop animations, edges flow with the right semantics. The whole shape, in one shot.<br/><br/>
+      <img src="./assets/AICanvasBuilding.gif" width="100%" alt="AI canvas building" />
+    </td>
+    <td width="50%" valign="top">
+      <b>4. A library of constructors</b><br/>
+      One click expands an entire pattern: nodes, edges, methods, types. Templates that ship, not stubs.<br/><br/>
+      <img src="./assets/TemplateLibrary.gif" width="100%" alt="Template library" />
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <b>5. Connect anything to anything</b><br/>
+      Hover a port, drag, snap. Semantic relationships are first-class citizens carrying meaning.<br/><br/>
+      <img src="./assets/EdgeConnecting.gif" width="100%" alt="Edge connecting" />
+    </td>
+    <td width="50%" valign="top">
+      <b>6. Every node, fully editable</b><br/>
+      Double-click any node. Methods, fields, validation rules — edit inline with a contextual inspector.<br/><br/>
+      <img src="./assets/InspectorReveal.gif" width="100%" alt="Inspector reveal" />
+    </td>
+  </tr>
+</table>
+
+<div align="center">
+  <b>Ask your architecture anything</b><br/>
+  Switch to Instruct mode and chat with your design. Every citation is a live chip that focuses the canvas.<br/><br/>
+  <img src="./assets/InstructQuestion.gif" width="80%" alt="Instruct mode" />
+</div>
+
+---
+
+## ✦ Features
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <ul>
+        <li><b>Three-Mode Pipeline:</b> <code>Sketch</code> → <code>Refine</code> → <code>Generate</code></li>
+        <li><b>Native SVG Sketch Surface:</b> Freehand, stencils, frames, multi-tab workspace</li>
+        <li><b>AI-Driven Refine:</b> LangGraph + DeepSeek inference</li>
+        <li><b>21 First-Class Node Families:</b> Table, DTO, Model, Service, Worker, Controller, APIGateway, Repository, and more.</li>
+        <li><b>16 Semantic Edge Kinds:</b> <code>CALLS</code>, <code>QUERIES</code>, <code>WRITES</code>, <code>PUBLISHES</code>, <code>SUBSCRIBES</code>...</li>
+        <li><b>Mermaid Export:</b> Every graph round-trips for external tooling.</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <ul>
+        <li><b>Constructor Library:</b> One-click expansion into fully-wired node groups.</li>
+        <li><b>Purpose-Built Inspectors:</b> Column grids for tables, method tables for services.</li>
+        <li><b>Instruct Mode:</b> Q&A with live node chips and per-turn context.</li>
+        <li><b>Edge Bundling & Routing:</b> Obstacle-aware paths.</li>
+        <li><b>Local-First Persistence:</b> Your project is the canonical model.</li>
+        <li><b>Aydınlık Blueprint Design:</b> Paper zemin, semantic colors, hairline grid.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+---
+
+## ✦ The Philosophy
+
+> **Solarch doesn't write code. It writes architecture.**
+>
+> The industry has spent two years trying to make LLMs write code. The result: confident hallucinations, ghost APIs, and codebases that compile but lie. The hallucination isn't a tuning problem — it's a category error.
+> 
+> Architecture is the level where structure is **provable**. A controller calls a service. A service queries a repository. A repository writes a table. These relationships are either present or not. They can't be hallucinated.
+
+Solarch separates the two concerns:
+
+1. **Constructors:** Deterministic, hand-authored, pre-wired patterns that ship the structural 80% of any backend. No AI, no risk. Just composition.
+2. **Surgical AI:** Invoked only inside the algorithmic 20%. A specific business rule, the pricing curve, the retry policy. Where AI genuinely earns its keep.
+
+**Predictable structure. Targeted intelligence. Zero hallucinated APIs.**
+
+---
+
+## ✦ Get Involved
+
+We welcome feedback, discussions, and contributions. 
+
+- 💬 [**GitHub Discussions**](https://github.com/fatalerrorist/Solarch/discussions) — Feature requests, design feedback, questions.
+- 🐛 [**Issues**](https://github.com/fatalerrorist/Solarch/issues) — Bug reports, regressions.
+- 🛠️ [**Contributing Guide**](./CONTRIBUTING.md) — Local setup, conventions, commit style.
+
+<br/>
+
+## ✦ License
+
+[PolyForm Noncommercial License 1.0.0](./LICENSE) — © 2026 Ugur Akdogan.
+
+**Free** for personal use, research, education, and non-profit organizations. Source is open: fork, learn, modify, share — go for it. <br/>
+**Commercial use requires a separate license** — reach out at [info@solidea.tech](mailto:info@solidea.tech).
+
+<br/>
+<div align="center">
+  <b>See. Understand. Plan.</b><br/>
+  In one shot.<br/><br/>
+  <img src="assets/logo-1779724213346.svg" width="30" style="opacity: 0.5;" /><br/>
+  <b>Solarch.</b>
+</div>

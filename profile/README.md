@@ -1,6 +1,6 @@
 <div align="center">
 <h2 align="center">
-  <img src="assets/logo-1779724213346.svg" alt="Solarch Logo" width="60" align="center" /> 
+  <img src="assets/logo-1779724213346.svg" alt="Solarch Logo" width="40" align="center" /> 
   &nbsp;&nbsp;Solarch&nbsp;&nbsp;
 </h2>
   <p>Bridging diagrams and code via a strict rules engine to stop AI errors.</p>
